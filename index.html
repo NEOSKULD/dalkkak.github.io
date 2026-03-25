@@ -135,6 +135,17 @@ section {
   justify-content: center;
   overflow: hidden;
 }
+.hero-bg-img {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://i.imgur.com/YD42iNC.jpeg');
+  background-size: cover;
+  background-position: center top;
+  opacity: 0.18;
+  mix-blend-mode: luminosity;
+  pointer-events: none;
+  z-index: 1;
+}
 .hero-grid-bg {
   position: absolute;
   inset: 0;
@@ -1137,6 +1148,7 @@ body.glitching::after{opacity:.95}
 </nav>
 
 <section class="hero" id="hero">
+  <div class="hero-bg-img"></div>
   <div class="hero-grid-bg"></div>
   <div class="hero-glow"></div>
   <div class="hero-content">
@@ -1212,58 +1224,75 @@ body.glitching::after{opacity:.95}
   가로형 이미지는 gallery-item wide 클래스로 쓰세요.
   ====================================================== -->
   <div class="gallery-grid" id="galleryGrid">
-
     <!-- 이미지 01 -->
     <div class="gallery-item electric-hover" data-category="character">
-      <img src="https://placehold.co/400x533/0d0f17/c51a43?text=연서+기준샷" alt="김연서 기준샷" loading="lazy">
+      <img src="https://i.imgur.com/YD42iNC.jpeg" alt="김연서 — 딸깍 순간" loading="lazy">
       <div class="gallery-item-label">
         <span class="gallery-item-tag">Character</span>
-        <span class="gallery-item-name">김연서 &mdash; 기준샷</span>
+        <span class="gallery-item-name">김연서 — 딸깍 순간</span>
       </div>
     </div>
 
     <!-- 이미지 02 -->
+    <div class="gallery-item electric-hover" data-category="character">
+      <img src="https://i.imgur.com/g2Wy3GR.png" alt="김연서 — 기준샷" loading="lazy">
+      <div class="gallery-item-label">
+        <span class="gallery-item-tag">Character</span>
+        <span class="gallery-item-name">김연서 — 기준샷</span>
+      </div>
+    </div>
+
+    <!-- 이미지 03 -->
     <div class="gallery-item electric-hover" data-category="fanart">
-      <img src="https://placehold.co/400x533/0d0f17/c51a43?text=팬아트+01" alt="팬아트 01" loading="lazy">
+      <img src="https://i.imgur.com/E4Ln66D.png" alt="팬아트 01" loading="lazy">
       <div class="gallery-item-label">
         <span class="gallery-item-tag">Fanart</span>
         <span class="gallery-item-name">팬아트 01</span>
       </div>
     </div>
 
-    <!-- 이미지 03: 가로형 -->
-    <div class="gallery-item wide electric-hover" data-category="cover">
-      <img src="https://placehold.co/800x450/0d0f17/c51a43?text=표지+이미지" alt="표지" loading="lazy">
-      <div class="gallery-item-label">
-        <span class="gallery-item-tag">Cover</span>
-        <span class="gallery-item-name">3.3% 프로젝트 &mdash; 표지</span>
-      </div>
-    </div>
-
     <!-- 이미지 04 -->
-    <div class="gallery-item electric-hover" data-category="scene">
-      <img src="https://placehold.co/400x533/0d0f17/c51a43?text=딸깍+순간" alt="딸깍 순간" loading="lazy">
+    <div class="gallery-item electric-hover" data-category="fanart">
+      <img src="https://i.imgur.com/konEQgN.png" alt="팬아트 02" loading="lazy">
       <div class="gallery-item-label">
-        <span class="gallery-item-tag">Scene</span>
-        <span class="gallery-item-name">딸깍 순간</span>
+        <span class="gallery-item-tag">Fanart</span>
+        <span class="gallery-item-name">팬아트 02</span>
       </div>
     </div>
 
     <!-- 이미지 05 -->
     <div class="gallery-item electric-hover" data-category="scene">
-      <img src="https://placehold.co/400x533/0d0f17/c51a43?text=37.5도+카페" alt="37.5도 카페" loading="lazy">
+      <img src="https://i.imgur.com/RHIYiC8.png" alt="장면컷 01" loading="lazy">
       <div class="gallery-item-label">
         <span class="gallery-item-tag">Scene</span>
-        <span class="gallery-item-name">37.5도 카페</span>
+        <span class="gallery-item-name">장면컷 01</span>
       </div>
     </div>
 
     <!-- 이미지 06 -->
-    <div class="gallery-item electric-hover" data-category="fanart">
-      <img src="https://placehold.co/400x533/0d0f17/c51a43?text=팬아트+02" alt="팬아트 02" loading="lazy">
+    <div class="gallery-item electric-hover" data-category="scene">
+      <img src="https://i.imgur.com/hEgN2G3.png" alt="장면컷 02" loading="lazy">
       <div class="gallery-item-label">
-        <span class="gallery-item-tag">Fanart</span>
-        <span class="gallery-item-name">팬아트 02</span>
+        <span class="gallery-item-tag">Scene</span>
+        <span class="gallery-item-name">장면컷 02</span>
+      </div>
+    </div>
+
+    <!-- 이미지 07 -->
+    <div class="gallery-item wide electric-hover" data-category="cover">
+      <img src="https://i.imgur.com/lsiKKtI.png" alt="표지 이미지" loading="lazy">
+      <div class="gallery-item-label">
+        <span class="gallery-item-tag">Cover</span>
+        <span class="gallery-item-name">표지 이미지</span>
+      </div>
+    </div>
+
+    <!-- 이미지 08 -->
+    <div class="gallery-item electric-hover" data-category="character">
+      <img src="https://i.imgur.com/S1FZyhi.png" alt="캐릭터컷" loading="lazy">
+      <div class="gallery-item-label">
+        <span class="gallery-item-tag">Character</span>
+        <span class="gallery-item-name">캐릭터컷</span>
       </div>
     </div>
 
